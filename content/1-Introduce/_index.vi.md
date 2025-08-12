@@ -5,18 +5,22 @@ weight : 1
 chapter : false
 pre : " <b> 1. </b> "
 ---
-**Session Manager** là một chức năng nằm trong dịch vụ System Manager của AWS, Session Manager cung cấp khả năng quản lý các máy chủ một cách an toàn mà **không cần mở port SSH, không cần Bastion Host hoặc quản lý SSH key**. 
-Session Manager cũng giúp dễ dàng tuân thủ các chính sách của công ty yêu cầu quyền truy cập có kiểm soát, đảm bảo việc bảo mật nghiêm ngặt và ghi log truy việc truy cập trong khi vẫn cung cấp cho người dùng cuối quyền truy cập đa nền tảng.
+**Backup và Archive Migration với Tiered Storage** tập trung vào việc tối ưu hóa quy trình sao lưu và lưu trữ dữ liệu thông qua việc triển khai mô hình lưu trữ phân tầng (Tiered Storage) trên nền tảng đám mây. Giải pháp áp dụng Intelligent Tiering để tự động di chuyển dữ liệu giữa các lớp lưu trữ phù hợp, giảm thiểu chi phí mà vẫn đảm bảo khả năng truy xuất khi cần thiết.
 
-Với việc sử dụng Session Manager, bạn sẽ có được những ưu điểm sau:
+Dự án sẽ bao gồm các thành phần quan trọng:
 
-- Không cần phải mở cổng 22 cho giao thức SSH.
-- Có thể cấu hình để kết nối không cần đi ra ngoài internet.
-- Không cần quản lý private key của server để kết nối SSH.
-- Quản lý tập trung được user bằng việc sử dụng AWS IAM.
-- Truy cập tới server một cách dễ dàng và đơn giản bằng một cú click chuột.
-- Thời gian truy cập nhanh chóng hơn các phương thức truyền thống như SSH.
-- Hỗ trợ nhiều hệ điều hành khác nhau như Linux, Windows, MacOS.
-- Log lại được các phiên kết nối và các câu lệnh đã thực thi trong lúc kết nối tới server.
+**Migration Automation** – Tự động hóa quá trình di chuyển dữ liệu từ hệ thống backup cũ sang môi trường mới.
 
-Với những ưu điểm trên, bạn có thể sử dụng Session Manager thay vì sử dụng kỹ thuật Bastion host giúp chúng ta tiết kiệm được thời gian và chi phí khi quản lý server Bastion.
+Tiering Strategies – Xây dựng chiến lược phân tầng lưu trữ nhằm cân bằng giữa chi phí, hiệu suất và thời gian truy xuất.
+
+Cost Optimization – Phân tích và triển khai giải pháp giảm chi phí lưu trữ dài hạn.
+
+Retrieval Procedures – Quy trình khôi phục dữ liệu nhanh chóng và chính xác.
+
+Compliance Validation – Đảm bảo hệ thống tuân thủ các tiêu chuẩn bảo mật và lưu trữ dữ liệu.
+
+Monitoring Setup & Operational Procedures – Hệ thống giám sát và quy trình vận hành đảm bảo tính ổn định.
+
+Testing Framework – Bộ khung kiểm thử đảm bảo tính chính xác và tin cậy của quá trình backup/restore.
+
+Mục tiêu của đề tài là xây dựng một hệ thống backup và lưu trữ dài hạn tối ưu, vừa tiết kiệm chi phí, vừa đáp ứng các yêu cầu bảo mật và tuân thủ, đồng thời cung cấp khả năng mở rộng và tự động hóa cao.
