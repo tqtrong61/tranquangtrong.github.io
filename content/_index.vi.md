@@ -1,22 +1,24 @@
 ---
-title : "Session Management"
+title : "Backup và Archive Migration với Tiered Storage"
 date :  "`r Sys.Date()`" 
 weight : 1 
 chapter : false
 ---
-# Làm việc với Amazon System Manager - Session Manager
+# Backup và Archive Migration với Tiered Storage
 
 ### Tổng quan
 
- Trong bài lab này, bạn sẽ tìm hiểu các khái niệm cơ bản và thực hành về Amazon System Manager - Session Management. Thực hành tạo kết nối đến máy chủ public và máy chủ private trong VPC.
+Trong workshop này, bạn sẽ học cách triển khai hệ thống Backup & Archive trên AWS với tiered storage nhằm tối ưu chi phí, bật Intelligent-Tiering, tự động hóa retrieval, và bảo đảm compliance.
 
-![ConnectPrivate](/images/arc-log.png) 
+Quy trình thực hành bao gồm: khởi tạo hạ tầng & baseline bảo mật, cấu hình bucket/backup vault và lifecycle tiers, thiết lập automation (AWS Backup Plans, S3 Batch Operations/Lambda/Step Functions), xây dựng quy trình retrieval có SLA, kiểm thử & xác thực compliance (AWS Backup Audit Manager/KMS/Object Lock), giám sát & cảnh báo (CloudWatch/CloudTrail), và dọn dẹp tài nguyên.
+
 
 ### Nội dung
 
  1. [Giới thiệu](1-introduce/)
  2. [Các bước chuẩn bị](2-Prerequiste/)
- 3. [Tạo kết nối đến máy chủ EC2](3-Accessibilitytoinstance/)
- 4. [Quản lý session logs](4-s3log/)
- 5. [Port Forwarding](5-Portfwd/)
- 6. [Dọn dẹp tài nguyên](6-cleanup/)
+ 3. [Cấu hình tiered storage & intelligent tiering](3-Configure Tiered Storage & Intelligent Tiering/)
+ 4. [Tự động hóa migration](4-Automate Migration/)
+ 5. [Quy trình retrieval & kiểm thử](5-Retrieval Process & Testing/)
+ 6. [Xác thực compliance & giám sát](6-Compliance Validation & Monitoring/)
+ 7. [Dọn dẹp tài nguyên](7-cleanup/)
