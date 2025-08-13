@@ -9,7 +9,7 @@ pre : " <b> 1. </b> "
 
 Dự án sẽ bao gồm các thành phần quan trọng:
 
-**Migration Automation** – Tự động hóa quá trình di chuyển dữ liệu từ hệ thống backup cũ sang môi trường mới.
+Migration Automation – Tự động hóa quá trình di chuyển dữ liệu từ hệ thống backup cũ sang môi trường mới.
 
 Tiering Strategies – Xây dựng chiến lược phân tầng lưu trữ nhằm cân bằng giữa chi phí, hiệu suất và thời gian truy xuất.
 
